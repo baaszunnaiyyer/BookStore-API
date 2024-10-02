@@ -1,4 +1,4 @@
-import { PORT, mongoDBURL } from "./config.js";
+import { PORT, mongoDBURL } from "./Config/config.js";
 import express from "express";
 import mongoose from "mongoose";
 import router from "./routes/book.routes.js";
