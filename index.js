@@ -10,14 +10,14 @@ app.use(express.json());
 //Middleware For handelling CORS pollicy
 
 //Allow all origin with default of cors(*)
-//## app.use(cors())
+app.use(cors())
 
 //Allow Custom Origin
-app.use(cors({
-    origin: 'httl://localhost:3000',
-    method: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type']
-}))
+// app.use(cors({
+//     origin: 'httl://localhost:3000',
+//     method: ['GET', 'POST', 'PUT', 'DELETE'],
+//     allowedHeaders: ['Content-Type']
+// }))
 app.use("/books", router)
 
 app.get("/", (req,res)=>{    

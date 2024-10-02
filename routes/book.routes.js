@@ -12,14 +12,14 @@ router.get("/", getBooks)
 router.get("/:id", getBook)
 
 //updates a book by ID
-router.put("/:id", uploadBook)
+router.put("/:id", updateBook)
 
 
 //Delete a Books by ID
-router.delete("/:id", updateBook)
+router.delete("/:id", deleteBook)
 
 
 // uploads a new Book
-router.post("/", deleteBook)
+router.post("/", uploadBook)
 
 export default router;
